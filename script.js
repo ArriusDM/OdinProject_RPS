@@ -19,17 +19,23 @@ function getPlayerChoice() {
 
 // find a way to minimize repetition 
 function playRound(playerchoice, cpuchoice) {
-    if (playerSelection === "rock" && computerSelection === "rock" || playerSelection === "paper" && computerSelection === "paper" || playerSelection === "scissors" && computerSelection === "scissors") {
-        console.log(`You chose ${playerchoice} and the computer chose ${cpuchoice}, you drew the round!`)
-        return
-    } else if (playerSelection === "rock" && computerSelection === "paper" || playerSelection === "paper" && computerSelection === "scissors" || playerSelection === "scissors" && computerSelection === "rock") {
-        console.log(`You chose ${playerchoice} and the computer chose ${cpuchoice}, you lost the round!`)
-        cpuScore++
-        return
-    } else if (playerSelection === "rock" && computerSelection === "scissors" || playerSelection === "scissors" && computerSelection === "paper" || playerSelection === "paper" && computerSelection === "rock") {
-        console.log(`You chose ${playerchoice} and the computer chose ${cpuchoice}, you won the round!`)
-        playerScore++
-        return
+    if (playerSelection === "rock" && computerSelection === "rock" ||
+        playerSelection === "paper" && computerSelection === "paper" ||
+        playerSelection === "scissors" && computerSelection === "scissors") {
+            console.log(`You chose ${playerchoice} and the computer chose ${cpuchoice}, you drew the round!`)
+            return
+    } else if (playerSelection === "rock" && computerSelection === "paper" ||
+        playerSelection === "paper" && computerSelection === "scissors" ||
+        playerSelection === "scissors" && computerSelection === "rock") {
+            console.log(`You chose ${playerchoice} and the computer chose ${cpuchoice}, you lost the round!`)
+            cpuScore++
+            return
+    } else if (playerSelection === "rock" && computerSelection === "scissors" ||
+        playerSelection === "scissors" && computerSelection === "paper" ||
+        playerSelection === "paper" && computerSelection === "rock") {
+            console.log(`You chose ${playerchoice} and the computer chose ${cpuchoice}, you won the round!`)
+            playerScore++
+            return
         // } else if (playerSelection === "paper" && computerSelection === "rock") {
         //     console.log(`You chose ${playerchoice} and the computer chose ${cpuchoice}, you won the round!`)
         //     playerScore++
