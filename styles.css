@@ -2,15 +2,17 @@ body {
 
     max-width: 480px;
     text-align: center;
-
+    margin: auto;
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    border: 3px red dashed;
+    border: 2px black solid;
+    
 }
 
-body * {
+/* body * {
     border: 2px blueviolet solid;
 
-}
+} */
